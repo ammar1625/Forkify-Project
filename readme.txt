@@ -8,6 +8,8 @@ i made it as a chalenge
 NOTE!!!
 whenever you try it out try to evade sending too much requests (too much searches) because this is gonna make the server slow due to server's issue not my application's performance problems :-) 
 
+in the search field try to use terms like "pizza-tacos-broccoli..."
+for more availble keywords you can check in the api documentation bellow
 
 api documentation link 
 
