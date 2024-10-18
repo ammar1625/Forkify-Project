@@ -1,0 +1,209 @@
+
+.right-section
+{
+    flex: 2;
+    height: auto;
+    border-bottom-right-radius: 25px;
+    position: relative;
+  
+}
+
+.img-container
+{
+    width: 100%;
+}
+.main-img
+{
+    width: 780px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.name
+{
+    position: absolute;
+    top: 240px;
+    left: 170px;
+    clip-path: polygon(10% 5%, 100% 0%, 90% 100%, 0% 100%);
+    background-image:linear-gradient(to right bottom, rgb(251, 219, 137), rgb(244, 137, 130));
+    padding: 9px 10px;
+    color: white;
+    width: 410px;
+    white-space: pre-wrap;
+    text-align: center;
+    transform: rotate(-5deg);
+
+}
+
+.time-ctr
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.informations-ctr
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 390px;
+    
+}
+
+.infos-icon , .add , .remove
+{
+    width: 30px;
+    transition: all 0.5s;
+    margin-bottom: 0;
+}
+
+.add:hover
+{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.remove:hover
+{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.label
+{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.save-to-book-mark-icon
+{
+    width: 35px;
+    cursor: pointer;
+}
+
+.bookmarks-icon-ctr
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-image:linear-gradient(to right bottom, rgb(251, 219, 137), rgb(244, 137, 130));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reciep-gredients-ctr
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+    align-items: center;
+    background: #F2EFEE;
+    padding-top: 50px;
+    height: auto; 
+    border-bottom-right-radius: 25px;
+
+}
+
+.title
+{
+    font-size: 22px;
+    color: #f38e82;
+}
+
+.ingredients
+{
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    background: #F2EFEE;
+    height: auto;
+   
+    
+}
+
+.ingredent-element
+{
+  /*   width: 280px; */
+    text-align: left;
+    word-spacing: 2px;
+    font-weight:400 ;
+}
+
+.check
+{
+    color: crimson;
+}
+
+.how-to-cook-ctr
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    
+}
+
+.description
+{
+    font-size: 18px;
+    font-weight: 400;
+    width: 70%;
+    line-height: 28px;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.cooker
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.directions-btn
+{
+    border: none;
+    background-image: linear-gradient(to right bottom, rgb(251, 219, 137), rgb(244, 137, 130));
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.right-list
+{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 380px; 
+    height: auto;
+    max-height: 100%;
+    
+   
+    background-color: white;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.hidden
+{
+     display: none; 
+  
+}

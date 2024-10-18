@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forkify App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/body-styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/inner-body-styles.css">
+    <link rel="stylesheet" href="styles/right-section-styles.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <script defer src="scripts/header-script.js"></script>
+</head>
+<body>
+    <!--the main container-->
+    <div class="main">
+
+        <!--header section-->
+        <div class="header-section">
+            <div class="logo-ctr">
+                <img src="images/forkify-logo.png" alt="forkify" class="logo">
+            </div>
+
+            <div class="search-ctr">
+                <input type="text" class="search-input" placeholder="search over 1.000.000 recieps">
+                <button class="search-btn">
+                    <img class="search__icon icon" src="icons/search.png">
+                    SEARCH 
+                </button>
+            </div>
+
+            <div class="btns-ctr">
+                <button class="add-reciep-btn btn">
+                    <img class="add-reciep__icon icon" src="icons/edit.png">
+                    ADD RECIEP
+                </button>
+                <button class="book-marks-btn btn">
+                    <img class="bookmarks__icon icon" src="icons/bookmark.png">
+                    BOOKMARKS
+                </button>
+            </div>
+        </div>
+
+        <!--body section-->
+        <div class="body-section">
+
+            <!--left section that contains foods list-->
+            <div class="left-section">
+
+                <div class="foods-list-ctr">
+
+              
+
+                   
+                </div>
+
+                <div class="paging-btns-ctr">
+                    <button class="prev paging-btn">&larr;Page <span class="prev-num">1</span></button>
+                    <button class="next paging-btn">Page <span class="next-num">2</span>&rarr;</button>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="foods-list-ctr right-list hidden">
+                    <!--this part to be generated using javaScript-->
+                </div>
+                <div class="img-container">
+                    <img src="http://forkify-api.herokuapp.com/images/FlatBread21of1a180.jpg" alt="main image" class="main-img">
+                    <h1 class="name">Spicy Chicken and Pepper Jack Pizza</h1>
+                </div>
+               
+                <div class="time-ctr">
+                    <div class="informations-ctr">
+                       
+                        <h2 class="label time"> <img src="icons/clock.png" alt="infos-icon" class="infos-icon"> 70 Minutes</h2>
+                        <h2 class="label people"> <img src="icons/user.png" alt="infos-icon" class="infos-icon"> 4 persons</h2>
+
+                        <div><img class="remove" src="icons/delete.png"><img class="add" src="icons/add.png"></div>
+                    </div>
+
+                    <div class="bookmarks-icon-ctr">
+                        <img src="icons/bookmark.png" alt="save" class="save-to-book-mark-icon" data-name="filled">
+                    </div>
+                </div>
+
+                <div class="reciep-gredients-ctr">
+                    <div class="title-ctr">
+                        <h1 class="title">RECIEP INGREDIENTS</h1>
+                    </div>
+                    <div class="ingredients">
+                        <!--this part to be generated using javaScipt-->
+                    </div>
+                </div>
+
+                <div class="how-to-cook-ctr">
+                    <h1 class="title">HOW TO COOK IT</h1>
+                    <p class="description">This recipe was carefully designed and tested by <span class="cooker"> Simply Recipes.</span> 
+                         Please check out directions at their website.
+                    </p>
+                    <button class="directions-btn">Decisions &rarr;</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="model hidden">
+        <div class="top">
+            <div class="left">
+                <div class="header-ctr">
+                    <h2 class="header">
+                        RECIEP DATA
+                    </h2>
+                </div>
+                <div class="form">
+                    <div class="field">
+                        <p class="field-label">Title</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Url</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Image Url</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Publisher</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Prep Time</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Servings</p>
+                        <input type="text" class="field-input" placeholder="Test">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="header-ctr">
+                    <h2 class="header">
+                        INGREDIENTS
+                    </h2>
+                </div>
+                <div class="form">
+                    <div class="field">
+                        <p class="field-label">Ingredient 1</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Ingredient 2</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Ingredient 3</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Ingredient 4</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Ingredient 5</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                    <div class="field">
+                        <p class="field-label">Ingredient 6</p>
+                        <input type="text" class="field-input" placeholder="Ingredient">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="upload-btn"> <img src="icons/upload.png" alt="" class="cloud">UPLOAD RECIEP</button>
+            <BUtton class="close-btn">X</BUtton>
+        </div>
+    </div>
+</body>
+</html>
